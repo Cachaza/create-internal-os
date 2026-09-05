@@ -6,7 +6,7 @@ Create an organization-aware internal application from [Internal OS Starter](htt
 pnpm create internal-os my-app
 ```
 
-The generator asks for the product name, workspace package scope, and PostgreSQL database name. It then creates an independent Git repository, generates `apps/web/.env`, and installs dependencies.
+You can omit the directory and choose it interactively. The generator asks only for values not already supplied, shows a confirmation summary, creates both application environment files, and reports each completed step.
 
 For non-interactive use:
 
@@ -18,6 +18,14 @@ pnpm create internal-os my-app \
 ```
 
 Skip dependency installation with `--no-install`.
+
+Accept all defaults without confirmation:
+
+```bash
+pnpm create internal-os my-app --yes
+```
+
+Skip Git initialization with `--no-git`. Pressing `Ctrl+C` during generation removes the incomplete destination.
 
 ## Generated stack
 
