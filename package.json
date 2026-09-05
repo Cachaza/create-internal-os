@@ -4,7 +4,7 @@
 	"description": "Create an organization-aware internal application from Internal OS Starter",
 	"type": "module",
 	"bin": {
-		"create-internal-os": "./bin/create-internal-os.js"
+		"create-internal-os": "bin/create-internal-os.js"
 	},
 	"files": [
 		"bin",
