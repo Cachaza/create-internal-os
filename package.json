@@ -1,0 +1,36 @@
+{
+	"name": "create-internal-os",
+	"version": "0.1.0",
+	"description": "Create an organization-aware internal application from Internal OS Starter",
+	"type": "module",
+	"bin": {
+		"create-internal-os": "./bin/create-internal-os.js"
+	},
+	"files": [
+		"bin",
+		"README.md"
+	],
+	"scripts": {
+		"test": "node --test",
+		"check": "node --check bin/create-internal-os.js && node --test"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cachaza/create-internal-os.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Cachaza/create-internal-os/issues"
+	},
+	"homepage": "https://github.com/Cachaza/create-internal-os#readme",
+	"keywords": [
+		"create",
+		"starter",
+		"nextjs",
+		"trpc",
+		"drizzle",
+		"better-auth"
+	]
+}
