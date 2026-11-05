@@ -1,6 +1,6 @@
 {
 	"name": "create-internal-os",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Create an organization-aware internal application from Internal OS Starter",
 	"type": "module",
 	"bin": {
@@ -12,7 +12,8 @@
 	],
 	"scripts": {
 		"test": "node --test",
-		"check": "node --check bin/create-internal-os.js && node --test"
+		"check": "node --check bin/create-internal-os.js && node --test",
+		"test:smoke": "node scripts/smoke.js"
 	},
 	"engines": {
 		"node": ">=24"
