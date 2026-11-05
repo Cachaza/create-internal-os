@@ -16,5 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      # Matches the pinned starter's packageManager contract.
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.20.0
       - run: npm run check
       - run: npm pack --dry-run
+      - run: npm run test:smoke
